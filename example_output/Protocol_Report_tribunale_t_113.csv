@@ -1,0 +1,172 @@
+,RUN,Target sample,Source populations,Reference populations,Thresholds,contributing populations,non-contributing populations,ambiguous populations,number of valid models,number of compact models,number of questionable models,number of changed classification due to questionable models,number of compact models that contain a compact model,comment
+0,main run,tribunale_t_113,"anatolia_n, armenia_chl, steppe_mlba, tunisia_n, megiddo_mlba_original","elmiron,mota,ust_ishim,kostenki14,goyetq116-1,vestonice16,ma1,villabruna,ehg,chg,natufian","tail_prob=0.05, p_value=0.05","tunisia_n, megiddo_mlba_original",anatolia_n,"armenia_chl, steppe_mlba",3,1,1,2,0,
+
+,valid models,"feasible                                    True
+Anatolia_N                                     0
+Armenia_ChL                                0.107
+Steppe_MLBA                                    0
+Tunisia_N                                  0.114
+Megiddo_MLBA_original                       0.78
+prob                                    0.277317
+nested-p                                0.232818
+nested_p_with_Anatolia_N                0.200325
+nested_p_with_Armenia_ChL              0.0296581
+nested_p_with_Steppe_MLBA               0.135091
+nested_p_with_Tunisia_N                0.0005503
+nested_p_with_Megiddo_MLBA_original            0
+Name: 665, dtype: object","feasible                                     True
+Anatolia_N                                      0
+Armenia_ChL                                     0
+Steppe_MLBA                                 0.035
+Tunisia_N                                    0.11
+Megiddo_MLBA_original                       0.855
+prob                                     0.153308
+nested-p                                0.0724035
+nested_p_with_Anatolia_N                 0.154322
+nested_p_with_Armenia_ChL               0.0325556
+nested_p_with_Steppe_MLBA                 0.12188
+nested_p_with_Tunisia_N                0.00307066
+nested_p_with_Megiddo_MLBA_original             0
+Name: 666, dtype: object","feasible                                     True
+Anatolia_N                                      0
+Armenia_ChL                                     0
+Steppe_MLBA                                     0
+Tunisia_N                                   0.118
+Megiddo_MLBA_original                       0.882
+prob                                     0.112506
+nested-p                                0.0539717
+nested_p_with_Anatolia_N                0.0839355
+nested_p_with_Armenia_ChL               0.0296581
+nested_p_with_Steppe_MLBA                 0.12188
+nested_p_with_Tunisia_N                0.00982144
+nested_p_with_Megiddo_MLBA_original             0
+Name: 676, dtype: object"
+0,classification,Compact,Questionably Compact,Not Compact
+
+,RUN,Target sample,Source populations,Reference populations,Thresholds,contributing populations,non-contributing populations,ambiguous populations,number of valid models,number of compact models,number of questionable models,number of changed classification due to questionable models,number of compact models that contain a compact model,comment
+0,validation anatolia n in reference set,tribunale_t_113,"armenia_chl, steppe_mlba, tunisia_n, megiddo_mlba_original","elmiron,mota,ust_ishim,kostenki14,goyetq116-1,vestonice16,ma1,villabruna,ehg,chg,natufian,anatolia_n","tail_prob=0.05, p_value=0.05","tunisia_n, megiddo_mlba_original","armenia_chl, steppe_mlba",,3,1,0,0,0,
+
+,valid models,"feasible                                     True
+Armenia_ChL                                  0.09
+Steppe_MLBA                                     0
+Tunisia_N                                   0.099
+Megiddo_MLBA_original                       0.811
+prob                                     0.302822
+nested-p                                0.0674505
+nested_p_with_Armenia_ChL                0.162695
+nested_p_with_Steppe_MLBA               0.0674505
+nested_p_with_Tunisia_N                0.00111147
+nested_p_with_Megiddo_MLBA_original             0
+Name: 318, dtype: object","feasible                                     True
+Armenia_ChL                                     0
+Steppe_MLBA                                 0.023
+Tunisia_N                                   0.092
+Megiddo_MLBA_original                       0.885
+prob                                     0.205852
+nested-p                                 0.025318
+nested_p_with_Armenia_ChL                0.025318
+nested_p_with_Steppe_MLBA                 0.58958
+nested_p_with_Tunisia_N                0.00393623
+nested_p_with_Megiddo_MLBA_original             0
+Name: 319, dtype: object","feasible                                     True
+Armenia_ChL                                     0
+Steppe_MLBA                                     0
+Tunisia_N                                   0.092
+Megiddo_MLBA_original                       0.908
+prob                                     0.252281
+nested-p                                0.0708989
+nested_p_with_Armenia_ChL                0.162695
+nested_p_with_Steppe_MLBA                 0.58958
+nested_p_with_Tunisia_N                0.00321545
+nested_p_with_Megiddo_MLBA_original             0
+Name: 325, dtype: object"
+0,classification,Not Compact,Not Compact,Compact
+
+,RUN,Target sample,Source populations,Reference populations,Thresholds,contributing populations,non-contributing populations,ambiguous populations,number of valid models,number of compact models,number of questionable models,number of changed classification due to questionable models,number of compact models that contain a compact model,comment
+0,validation armenia chl in reference set,tribunale_t_113,"anatolia_n, steppe_mlba, tunisia_n, megiddo_mlba_original","elmiron,mota,ust_ishim,kostenki14,goyetq116-1,vestonice16,ma1,villabruna,ehg,chg,natufian,armenia_chl","tail_prob=0.05, p_value=0.05","tunisia_n, megiddo_mlba_original","anatolia_n, steppe_mlba",,2,1,0,0,0,
+
+,valid models,"feasible                                    True
+Anatolia_N                                     0
+Steppe_MLBA                                0.025
+Tunisia_N                                  0.084
+Megiddo_MLBA_original                      0.891
+prob                                   0.0698705
+nested-p                               0.0455273
+nested_p_with_Anatolia_N               0.0455273
+nested_p_with_Steppe_MLBA               0.350402
+nested_p_with_Tunisia_N                0.0103479
+nested_p_with_Megiddo_MLBA_original            0
+Name: 319, dtype: object","feasible                                    True
+Anatolia_N                                     0
+Steppe_MLBA                                    0
+Tunisia_N                                  0.081
+Megiddo_MLBA_original                      0.919
+prob                                   0.0790643
+nested-p                                0.087554
+nested_p_with_Anatolia_N               0.0646848
+nested_p_with_Steppe_MLBA               0.350402
+nested_p_with_Tunisia_N                 0.038677
+nested_p_with_Megiddo_MLBA_original            0
+Name: 325, dtype: object"
+0,classification,Not Compact,Compact
+
+,RUN,Target sample,Source populations,Reference populations,Thresholds,contributing populations,non-contributing populations,ambiguous populations,number of valid models,number of compact models,number of questionable models,number of changed classification due to questionable models,number of compact models that contain a compact model,comment
+0,validation megiddo mlba original in reference set,tribunale_t_113,"anatolia_n, armenia_chl, steppe_mlba, tunisia_n","elmiron,mota,ust_ishim,kostenki14,goyetq116-1,vestonice16,ma1,villabruna,ehg,chg,natufian,megiddo_mlba_original","tail_prob=0.05, p_value=0.05",,,,0,0,0,0,0,NO VALID MODELS
+
+,valid models
+0,classification
+
+,RUN,Target sample,Source populations,Reference populations,Thresholds,contributing populations,non-contributing populations,ambiguous populations,number of valid models,number of compact models,number of questionable models,number of changed classification due to questionable models,number of compact models that contain a compact model,comment
+0,validation steppe mlba in reference set,tribunale_t_113,"anatolia_n, armenia_chl, tunisia_n, megiddo_mlba_original","elmiron,mota,ust_ishim,kostenki14,goyetq116-1,vestonice16,ma1,villabruna,ehg,chg,natufian,steppe_mlba","tail_prob=0.05, p_value=0.05","tunisia_n, megiddo_mlba_original","anatolia_n, armenia_chl",,2,1,0,0,0,
+
+,valid models,"feasible                                     True
+Anatolia_N                                      0
+Armenia_ChL                                  0.12
+Tunisia_N                                   0.095
+Megiddo_MLBA_original                       0.785
+prob                                     0.195562
+nested-p                                 0.217922
+nested_p_with_Anatolia_N                 0.217922
+nested_p_with_Armenia_ChL                0.123766
+nested_p_with_Tunisia_N                0.00473492
+nested_p_with_Megiddo_MLBA_original             0
+Name: 319, dtype: object","feasible                                    True
+Anatolia_N                                     0
+Armenia_ChL                                    0
+Tunisia_N                                  0.079
+Megiddo_MLBA_original                      0.921
+prob                                    0.146224
+nested-p                                0.143202
+nested_p_with_Anatolia_N                0.391267
+nested_p_with_Armenia_ChL               0.123766
+nested_p_with_Tunisia_N                0.0129935
+nested_p_with_Megiddo_MLBA_original            0
+Name: 325, dtype: object"
+0,classification,Not Compact,Compact
+
+,RUN,Target sample,Source populations,Reference populations,Thresholds,contributing populations,non-contributing populations,ambiguous populations,number of valid models,number of compact models,number of questionable models,number of changed classification due to questionable models,number of compact models that contain a compact model,comment
+0,validation tunisia n in reference set,tribunale_t_113,"anatolia_n, armenia_chl, steppe_mlba, megiddo_mlba_original","elmiron,mota,ust_ishim,kostenki14,goyetq116-1,vestonice16,ma1,villabruna,ehg,chg,natufian,tunisia_n","tail_prob=0.05, p_value=0.05",,,,0,0,0,0,0,NO VALID MODELS
+
+,valid models
+0,classification
+
+,source population,anatolia_n,armenia_chl,steppe_mlba,tunisia_n,megiddo_mlba_original
+0,conclusions,"main_run: Non-Contributing
+validation_armenia_chl: Non-Contributing
+validation_steppe_mlba: Non-Contributing
+","main_run: Ambiguous
+validation_anatolia_n: Non-Contributing
+validation_steppe_mlba: Non-Contributing
+","main_run: Ambiguous
+validation_anatolia_n: Non-Contributing
+validation_armenia_chl: Non-Contributing
+","main_run: Contributing
+validation_anatolia_n: Contributing
+validation_armenia_chl: Contributing
+validation_steppe_mlba: Contributing
+","main_run: Contributing
+validation_anatolia_n: Contributing
+validation_armenia_chl: Contributing
+validation_steppe_mlba: Contributing
+"
+
