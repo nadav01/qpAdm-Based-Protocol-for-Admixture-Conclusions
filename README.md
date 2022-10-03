@@ -1,17 +1,20 @@
 # qpAdm-Based-Protocol-for-Admixture-Conclusions
 
 In order to use the protocol, please follow the instructions below.
-In order to run qpAdm with specific target, sources and references populations, you need to edit the file run-analysis-v2.sh with your target, sources and references populations and then upload it to the BioIDC server.
+In order to run qpAdm with specific target, sources and references populations, you need to edit the file configuration.sh with your target, sources and references populations, relevant file paths and chosen output directory and then upload it to the BioIDC server.
 
 Connect to the BioIDC server, and run the command
-chmod +x ./run-analysis-v2.sh
+chmod +x ./configuration.sh
 and after it the command
-./run-analysis-v2.sh
+./configuration.sh
 in order to run the script.
-A directory named v2 is created within the server, and after a couple of minutes (3-4 minutes in average) the run should finish. Within the v2 directory you can see .out files.
+A new directory (with your chosen output directory name) is created within the server, and after a couple of minutes (3-4 minutes in average) the run should finish. Within the output directory you can see .out files.
+You can find an example of configuration.sh file in the example_data directory (configuration-example.sh)
 Run the command
-./process-logs.sh ./v2/job-1.out ./v2/job-2.out ./v2/job-3.out ./v2/job-4.out … /v2/job-n.out > output.tsv
+./process.sh ./v2/job-1.out ./v2/job-2.out ./v2/job-3.out ./v2/job-4.out … /v2/job-n.out > output.tsv
 (Complete the command with respect to all of the .out you have).
+
+You can combine and automate the two steps above if you edit run-configuration.sh and run it (instead of configuration.sh) 
 
 
 Now, the output of the qpAdm run is the output.tsv file.
