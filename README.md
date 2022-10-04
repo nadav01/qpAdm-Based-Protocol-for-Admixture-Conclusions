@@ -3,22 +3,27 @@
 In order to use the protocol, please follow the instructions below.
 In order to run qpAdm with specific target, sources and references populations, you need to edit the file configuration.sh with your target, sources and references populations, relevant file paths and chosen output directory and then upload it to the BioIDC server.
 
-Connect to the BioIDC server, and run the command
+Connect to the BioIDC server, and run the commands
 ```chmod +x ./configuration.sh```
-and after it the command ```configuration.sh```
-in order to run the script.  
+```chmod +x ./run-configuration.sh```
+
+The protocol expects .tsv files (outputs of qpAdm runs like described above) in that manner:  
+A file named MAIN_RUN.tsv which includes the full set of sources, as sources.  
+A file named VALIDATION_[source_name].tsv for every source population, which in this run the population source_name is in the reference set (replace the [source_name] in the filename with the specific source population’s name).
+
+The run-configuration.py script outputs the .tsv file in this format. Run the script with your chosen source and reference populations
+<br>```python run-configuration.py source1,source2,...,sourceN reference1,reference2,...,referenceK```
+<br>Please note that you need to insert relevant file paths and target population(s) in ```run-configuration.sh``` in advance.
+
+In case that you want to run this process manually, edit the ```configuration.sh``` file with your chosen settings and run it.
 A new directory (with your chosen output directory name) is created within the server, and after a couple of minutes (3-4 minutes in average) the run should finish. Within the output directory you can see .out files.  
 You can find an example of configuration.sh file in the example_data directory (configuration-example.sh)  
 Run the command  ```./process.sh ./v2/job-1.out ./v2/job-2.out ./v2/job-3.out ./v2/job-4.out … /v2/job-n.out > output.tsv```
 (Complete the command with respect to all of the .out you have).
 
-You can combine and automate the two steps above if you edit run-configuration.sh and run it (instead of configuration.sh) 
 
+Now, the relevant .tsv files are ready for be used by the protocol.  
 
-Now, the output of the qpAdm run is the output.tsv file.  
-The protocol expects .tsv files (outputs of qpAdm runs like described above) in that manner:  
-A file named MAIN_RUN.tsv which includes the full set of sources, as sources.  
-A file named VALIDATION_[source_name].tsv for every source population, which in this run the population source_name is in the reference set (replace the [source_name] in the filename with the specific source population’s name).
 
 Place the file protocol.py in the same directory where the .tsv files are located and run it using a command of this form:  
 ```python protocol.py MAIN_RUN.tsv,VALIDATION_source1.tsv,...,VALIDATION_sourceN.tsv Target1,...,TargetK source1,...,sourceN reference1,...,referenceJ t1 t2```
